@@ -1,0 +1,36 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+body{
+    background-color: #fff;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+}
