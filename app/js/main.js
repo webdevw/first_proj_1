@@ -4,6 +4,23 @@ $(function(){
         dots: true,
         arrows: true
     });
+    $('.slider-img-inner').slick({
+        dots: true,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear',
+        infinite: true,
+        speed: 500
+    });
+    $('.postslider__slider-inner').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500
+    });
+
 
 
     $(".loadMore").on('click', function (e) {
