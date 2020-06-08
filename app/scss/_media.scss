@@ -35,11 +35,11 @@
     .header__logo.logo__header{
         margin: 0 auto;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 10px;
+        left: calc(50% - 30px);
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        line-height: 1;
+        line-height: 100px;
         a{
             .header__logo-svg{
                 margin-top: 0;
@@ -102,6 +102,7 @@
         opacity: 0;
         visibility: hidden;
     }
+    
     .services__inner{
         padding: 40px 0 25px 0;
     }
@@ -117,6 +118,23 @@
         padding-left: 0;
         padding-right: 0;
     }
+    // на тачскринах hover статичный
+    .projects__inner-box .products__item-img .products__item-link {
+        opacity: 1;
+    }
+    .products__item .products__item-content{
+        background-color: #362f2d;
+        .products__item-title{
+            color: #f2f1f1;
+        }
+        .products__item-context{
+            color: #c7b299;
+        }
+    }
+    .products__item .products__item-content::after{
+        border-bottom-color: #362f2d;
+    }
+
 }
 
 
@@ -269,8 +287,9 @@
     .images__inner {
         justify-content: center;
     }
-
-
+    .btn__header-search input[type="text"]{
+        font-size: 18px;
+    }
 }
 @media(max-width: 645px){
     .projects__inner-box{
@@ -360,8 +379,21 @@
         display: block !important;
     }
 }
+
+@media(max-height: 415px){
+    .header{
+        height: 70px;
+    }
+    .menu__list{
+        top: 69px;
+        a{
+            padding: 4px 0;
+            font-size: 16px;
+            letter-spacing: .3em;
+        }
+    }
+}
 @media(max-height: 380px)
-// , (min-width: 567px)
 {
     .slide__content{
         margin-top: calc(10% + 1em);
@@ -392,9 +424,16 @@
     .header{
         height: 70px;
     }
+    .menu__list{
+        top: 69px;
+        a{
+            padding: 4px 0;
+            font-size: 16px;
+            letter-spacing: .3em;
+        }
+    }
 }
 @media(max-height: 340px)
-// , (min-width: 567px)
 {
     .slide__content-context {
         font-size: 14px;
@@ -422,6 +461,14 @@
     }
     .header{
         height: 70px;
+    }
+    .menu__list{
+        top: 69px;
+        a{
+            padding: 4px 0;
+            font-size: 16px;
+            letter-spacing: .3em;
+        }
     }
     
 }

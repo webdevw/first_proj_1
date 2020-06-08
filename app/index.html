@@ -18,7 +18,7 @@
             <header class="header">
                 <div class="container header__container">
                     <div class="header__inner">
-                        <div class="header__logo logo__header">
+                        <div class="header__logo logo__header animate__animated animate__bounceInLeft" data-wow-delay=".2s">
                             <a href="#">
                                 <svg class="header__logo-svg" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="56px">
@@ -35,7 +35,7 @@
                                     <div></div>
                                     <div></div>
                                 </div>
-                                <ul class="menu__list">
+                                <ul class="menu__list animate__animated animate__backInDown">
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Portfolio</a></li>
@@ -47,12 +47,18 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="header__btn btn__header">
+                        <div class="header__btn btn__header animate__animated animate__bounceInRight" data-wow-delay=".2s">
                             <div class="btn__header-portfolio">
                                 <a class="icon icon-briefcase" href="#"></a>
                             </div>
                             <div class="btn__header-search">
-                                <a class="icon icon-search" href="#"></a>
+                                <!-- <a class="icon icon-search" href="#"></a> -->
+                               <span class="icon icon-search">
+                                    <form action="#" autocomplete="off">
+                                        <input id="search" name="search" type="text" placeholder="Search ?">
+                                        <input id="search_submit" value="Rechercher" type="submit">
+                                    </form>
+                               </span>
                             </div>
                         </div>
         
@@ -66,9 +72,9 @@
                         <div class="container-fluid">
         
                             <div class="slide__content">
-                                <div class="slide__content-title">Unique and Modern Design</div>
-                                <div class="slide__content-text">Portfolio PSD Template</div>
-                                <div class="slide__content-context">Nam liber tempor cum soluta nobis eleifend option
+                                <div class="slide__content-title wow ">Unique and Modern Design</div>
+                                <div class="slide__content-text wow fadeInRightBig">Portfolio PSD Template</div>
+                                <div class="slide__content-context wow ">Nam liber tempor cum soluta nobis eleifend option
                                     congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
                                 <a href="#" class="link-btn">get started</a>
                             </div>
@@ -164,18 +170,16 @@
                 <div class="presentation__inner">
                     <div class="container">
                         <div class="presentation__text">
-                            <h3 class="presentation__text-title">
-                                Waxom is Realization of your Ideas.
-                            </h3>
-                            <p class="presentation__text-info">
+                            <div class="presentation__text-title wow animate__flipInX" data-wow-delay=".3s">Waxom is Realization of your Ideas.</div>
+                            <p class="presentation__text-info wow animate__fadeInUp" data-wow-delay=".3s">
                                 Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas
                                 est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                             </p>
                         </div>
                         <div class="presentation__images">
                             <img src="images/presentation-center.jpg" alt="" class="presentation__images-center">
-                            <img src="images/presentation-left.jpg" alt="" class="presentation__images-left">
-                            <img src="images/presentation-right.jpg" alt="" class="presentation__images-right">
+                            <img src="images/presentation-left.jpg" alt="" class="presentation__images-left  wow animate__fadeInLeftBig" data-wow-delay=".3s">
+                            <img src="images/presentation-right.jpg" alt="" class="presentation__images-right  wow animate__fadeInRightBig" data-wow-delay=".3s">
                         </div>
                     </div>
                 </div>
@@ -184,7 +188,7 @@
                 <div class="theme__wrapper">
                     <div class="container">
                         <div class="theme__inner">
-                            <div class="theme__text">
+                            <div class="theme__text wow animate__fadeInLeft" data-wow-delay=".3s">
                                 <div class="theme__text-title">
                                     <span>Waxom </span>Multipurpose WordPress Theme
                                 </div>
@@ -192,7 +196,7 @@
                                     Don't Forget to Rate the Template. Thanks so much!
                                 </div>
                             </div>
-                            <a href="#" class="link-btn">Purchase Now</a>
+                            <a href="#" class="link-btn wow animate__fadeInRight" data-wow-delay=".3s">Purchase Now</a>
                         </div>
                     </div>
                 </div>
@@ -201,16 +205,16 @@
                 <div class="projects__wrapper">
                     <div class="container">
                         <div class="projects__text">
-                            <div class="projects__text-title">
+                            <div class="projects__text-title wow animate__fadeInDown" data-wow-delay=".3s">
                                 Our Latest Projects.
                             </div>
-                            <div class="projects__text-context">
+                            <div class="projects__text-context wow animate__fadeInUp" data-wow-delay=".3s">
                                 Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas
                                 est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                             </div>
                         </div>
                         <div class="projects__inner">
-                            <div class="products__inner-btn">
+                            <div class="products__inner-btn wow animate__pulse" data-wow-delay=".1s">
                                 <button type="button" data-filter="all">All</button>
                                 <button type="button" data-filter=".web-design">Web Design</button>
                                 <button type="button" data-filter=".mob-app">Mobile App</button>
@@ -218,7 +222,7 @@
                                 <button type="button" data-filter=".photo">Photography</button>
                             </div>
                             <div class="projects__inner-box">
-                                <div class="products__item mix web-design" data-order="1">
+                                <div class="products__item mix web-design wow animate__zoomIn" data-order="1">
         
                                     <div class="products__item-img" href="#"
                                         style="background-image: url(images/projects/project_img_1.jpg);">
@@ -240,7 +244,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="products__item mix web-design" data-order="2">
+                                <div class="products__item mix web-design wow animate__zoomIn" data-order="2">
         
                                     <div class="products__item-img" href="#"
                                         style="background-image: url(images/projects/project_img_1.jpg);">
@@ -262,7 +266,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="products__item mix mob-app" data-order="3">
+                                <div class="products__item mix mob-app wow animate__zoomIn" data-order="3">
         
                                     <div class="products__item-img" href="#"
                                         style="background-image: url(images/projects/project_img_1.jpg);">
@@ -284,7 +288,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="products__item mix web-design" data-order="4">
+                                <div class="products__item mix web-design wow animate__zoomIn" data-order="4">
         
                                     <div class="products__item-img" href="#"
                                         style="background-image: url(images/projects/project_img_1.jpg);">
@@ -306,7 +310,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="products__item mix photo" data-order="5">
+                                <div class="products__item mix photo wow animate__zoomIn" data-order="5">
         
                                     <div class="products__item-img" href="#"
                                         style="background-image: url(images/projects/project_img_1.jpg);">
@@ -328,7 +332,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="products__item mix illustration" data-order="6">
+                                <div class="products__item mix illustration wow animate__zoomIn" data-order="6" >
         
                                     <div class="products__item-img" href="#"
                                         style="background-image: url(images/projects/project_img_1.jpg);">
@@ -353,10 +357,9 @@
         
                             </div>
                         </div>
-                        <a href="#" class="link-btn loadMore">
-                            load more
-                        </a>
-        
+                            <a href="#" class="link-btn loadMore">
+                                load more
+                            </a>    
                     </div>
                 </div>
             </section>
@@ -366,7 +369,8 @@
                         <dev class="video-present__content">
                             <div class="video-present__text">
                                 <div class="video-present__player">
-                                    <a href="#" id="myBtn" class="icon icon-play2"></a>
+                                    <!-- <a href="#" id="myBtn" class="icon icon-play2"></a> -->
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp=" class="icon icon-play2" ></a>
                                 </div>
                                 <h3 class="video-present__text-title">Waxom Video Presentation</h3>
                                 <div class="video-present__text-context">Investigationes demonstraverunt lectores legere
@@ -568,18 +572,18 @@
                 <div class="container">
                     <div class="clientLabel_inner">
                         <div class="clientLabel_logo">
-                            <div class="clientLabel_logo-image"
+                            <div class="clientLabel_logo-image wow animate__rotateIn"
                                 style="background-image: url(images/clientlabel/client_logo_1.png);"></div>
                         </div>
                         <div class="clientLabel_logo">
-                            <div class="clientLabel_logo-image"
+                            <div class="clientLabel_logo-image wow animate__rollIn"
                                 style="background-image: url(images/clientlabel/client_logo_2.png);"></div>
                         </div>
                         <div class="clientLabel_logo">
-                            <div class="clientLabel_logo-image"
+                            <div class="clientLabel_logo-image wow animate__zoomIn"
                                 style="background-image: url(images/clientlabel/client_logo_3.png);"></div>
                         </div>
-                        <div class="clientLabel_logo">
+                        <div class="clientLabel_logo wow animate__rotateInUpRight">
                             <div class="clientLabel_logo-image"
                                 style="background-image: url(images/clientlabel/client_logo_4.png);"></div>
                         </div>
@@ -647,14 +651,15 @@
                             <ul class="footer__col-text text">
                                 <li>
                                     <div class="text__box" href="#">
-                                        <p class="text__text"><span class="text__mod">@waxom </span>
+                                        <p class="text__text">
+                                            <a class="text__mod" href="mailto:someone@waxom.com" target="_blank" rel="noopener noreferrer">@waxom</a>
                                             Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
                                         <p class="text__time">3 mins ago</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="text__box" href="#">
-                                        <p class="text__text"> Mirum est <span class="text__mod">#envato </span>notare
+                                        <p class="text__text"> Mirum est <a href="#" class="text__mod">#envato </a>notare
                                             quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
                                         <p class="text__time">5 hours ago</p>
                                     </div>
@@ -713,7 +718,7 @@
 
 
 
-    <section class="modalWindows">
+    <!-- <section class="modalWindows">
         <div id="myModal" class="modal">
            <div class="modal-wrapper">
                 <div class="modal-content">
@@ -725,7 +730,7 @@
                 </div>
            </div>
         </div>
-    </section>
+    </section> -->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -10,9 +10,12 @@ html{
 html,
 body {
     height: 100%;
+    
 }
 body{
     background-color: #fff;
+    position: relative;
+    overflow-x: hidden;
 }
 a{
     display: inline-block;
