@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    
+}
+body{
+    background-color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,37 @@
+$cofy: #998675;
+$brown: #c7b299;
+$d-brown: #555555;
+$color-text: #8c8c8c;
+
+@mixin r400 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+@mixin r500 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+@mixin r600 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+@mixin r700 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+@mixin r800 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+@mixin m200 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+@mixin m300 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+@mixin m400 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
